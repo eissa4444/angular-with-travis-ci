@@ -1,0 +1,24 @@
+language: node_js
+node_js: 6.11.0
+
+install: npm installbefore_script:
+  - npm install -g @angular/cli
+  - npm install -g @angular/compiler-cli
+  - npm install -g @angular/language-service
+  - npm install -g typescript
+
+# Integration Build Steps
+script:
+  - ng build
+  - ng test
+  - ng serve
+notifications:
+  email:
+    - eissa3101652.me@gmail.com
+deploy:
+  provider: heroku
+  api_key: dd85bdc2-7431-4542-9fb7-a2207cab3358
+  skip_cleanup: true
+  app:
+    master: angular4-with-trivis-master
+    staging: angular4-with-trivis-staging
