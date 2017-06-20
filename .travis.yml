@@ -7,7 +7,6 @@ install:
 # Integration Build Steps
 script:
   - ng build
-  - ng serve
 notifications:
   email:
     - eissa3101652.me@gmail.com
