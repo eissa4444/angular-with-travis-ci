@@ -1,17 +1,12 @@
 language: node_js
 node_js: 6.11.0
 
-install: npm installbefore_script:
-  - npm install -g @angular/cli
-  - npm install -g @angular/compiler-cli
-  - npm install -g @angular/language-service
-  - npm install -g typescript
+install:
+  - npm install
 
 # Integration Build Steps
 script:
   - ng build
-  - ng test
-  - ng serve
 notifications:
   email:
     - eissa3101652.me@gmail.com
