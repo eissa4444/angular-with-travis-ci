@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  subtitle = '111111111111';
+  subtitle = 'continous integration with angular2';
 }

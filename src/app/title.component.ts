@@ -10,7 +10,7 @@ import { UserService } from './user.service';
 )
 export class TiltleComponent {
     @Input() subtitle = '';
-    title = 'Angular modules'
+    title = '(travis-ci)'
     user = ''
     constructor(userService: UserService) {
         this.user = userService.userName;
